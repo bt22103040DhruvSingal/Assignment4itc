@@ -12,8 +12,15 @@ class SumZero:
              sumofNum = Numlist[i]+Numlist[j]+Numlist[k]
              if sumofNum == 0:
                 listOfThreenum +=[(Numlist[i],Numlist[j],Numlist[k])]
-        print(listOfThreenum)
-
+        ###print all original lists
+        origList = []
+        for n in listOfThreenum:
+            if n in origList:
+                continue
+            else:
+                origList.append(n)
+        ###Print them
+        print(origList)
 print("Enter numbers of the list seprated by spaces:")
 num = input()
 num = num.split(" ")
@@ -23,4 +30,3 @@ for k in num:
 S = SumZero()
 S.assign(Numlist)
 S.printList()
-
