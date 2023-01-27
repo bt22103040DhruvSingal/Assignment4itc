@@ -1,2 +1,0 @@
-def student_data():
-    
